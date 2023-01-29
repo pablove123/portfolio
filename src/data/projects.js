@@ -13,14 +13,14 @@ const projectList=[
 
   {title: "TicTacToe", 
   description:"Built with JavaScript", 
-  image: temp, 
+  image: "temp", 
   repositoryLink: "https://github.com/pablove123/ttt-weekend", 
-  deploymentLink: temp},
-  {title: temp, 
-  description:temp, 
-  image: temp, 
-  repositoryLink: temp, 
-  deploymentLink: temp},
+  deploymentLink: "temp"},
+  {title: "temp", 
+  description:"temp", 
+  image: "temp", 
+  repositoryLink: "temp", 
+  deploymentLink: "temp"},
 ]
 
 export default projectList

@@ -1,6 +1,14 @@
+import projectList from "../data/projects";
+
 const Projects = (props) => {
   return ( 
-    <h1>Project Page</h1>
+    <>
+    <ul>
+    {projectList.map(project => (
+      <li> {project.title}</li>
+    ))}
+    </ul>
+    </>
    );
 }
  
