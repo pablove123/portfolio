@@ -1,6 +1,9 @@
+import hyphenate from "../utilities/hyphenateWords";
+
 const ProjectPreview = (props) => {
   return ( 
     <>
+    {console.log(hyphenate(props.project.title))}
     <div>
     <img 
         src={props.project.image} 

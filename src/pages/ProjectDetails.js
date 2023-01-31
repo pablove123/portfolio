@@ -9,7 +9,7 @@ const ProjectDetails = (props) => {
         src={projectList[1].image} 
         alt={props.title}
     />
-    
+    <a rel="noreferrer" target="_blank"  href="https://github.com/pablove123"><button>Github</button></a>
     </>
    );
 }
