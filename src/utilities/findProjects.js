@@ -1,11 +1,14 @@
 import projectList from "../data/projects";
+import hyphenate from "./hyphenateWords";
 
-const findProject = (props) => {
-  return ( 
-    function findProject(string){
-       
-    }
-   );
+  function findProject(str) {
+  const project = projectList.find(project => hyphenate(project.title) === str
+  )
+  return project
 }
- 
+
+
+
+  
+
 export default findProject;

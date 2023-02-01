@@ -9,9 +9,12 @@ import Resume from './pages/Resume';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import { useParams } from 'react-router-dom';
 
 
 function App() {
+  const { project } = useParams()
+  console.log("this is params", project)
   return (
     <>
     <NavBar/>
@@ -21,7 +24,7 @@ function App() {
       <Route path='/contact' element={<Contact />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/resume' element={<Resume />} />
-      <Route path='/projects/:projectDetails' element={<ProjectDetails />} />
+      <Route path='/:project' element={<ProjectDetails />} />
     </Routes>
     </>
   );

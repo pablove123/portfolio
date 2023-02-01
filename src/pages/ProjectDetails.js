@@ -1,15 +1,23 @@
 import projectList from "../data/projects";
+import { useParams } from "react-router-dom";
+import findProject from "../utilities/findProjects";
 
 const ProjectDetails = (props) => {
+  const pro = useParams()
+  let url = pro.project
+  let project = findProject(url)
+  console.log("this is pro" , pro.project)
+  console.log(findProject("mymoodymonster"))
+  console.log("this is project", project)
   return ( 
     <>
-    <h1>{projectList[1].title} </h1>
-    <p>{projectList[1].description}</p>
+    <h1>{project.title} </h1>
+    <p>{project.description}</p>
     <img 
-        src={projectList[1].image} 
-        alt={props.title}
+        src={project.image} 
+        alt={props.key}
     />
-    <a rel="noreferrer" target="_blank"  href="https://github.com/pablove123"><button>Github</button></a>
+    <a rel="noreferrer" target="_blank"  href={project.repositoryLink}><button>Github</button></a>
     </>
    );
 }
