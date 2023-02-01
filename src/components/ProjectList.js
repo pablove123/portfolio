@@ -1,4 +1,4 @@
-import projectList from "../data/projects";
+
 import ProjectPreview from "./ProjectPreview";
 
 const ProjectList = (props) => {
